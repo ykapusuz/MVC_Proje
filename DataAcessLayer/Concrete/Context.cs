@@ -32,7 +32,7 @@ namespace DataAcessLayer.Concrete
 			base.OnModelCreating(modelBuilder);
 		}
 	}
-	{
+	
 		
-	}
+	
 }
