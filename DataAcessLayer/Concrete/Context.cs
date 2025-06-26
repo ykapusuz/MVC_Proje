@@ -16,7 +16,7 @@ namespace DataAcessLayer.Concrete
 			//Database.SetInitializer(new DropCreateDatabaseIfModelChanges<Context>());
 			//Database.SetInitializer(new CreateDatabaseIfNotExists<Context>());
 			//Database.SetInitializer(new NullDatabaseInitializer<Context>());
-		}
+		} 
 
 		public DbSet<About> Abouts { get; set; }
 		public DbSet<Category> Categories { get; set; }
