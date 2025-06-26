@@ -24,7 +24,7 @@ namespace DataAcessLayer.Concrete
 		public DbSet<Heading> Contents { get; set; }
 		public DbSet<Heading> Headings { get; set; }
 		public DbSet<Writer> Writers { get; set; }
-		
+		   
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{
 			modelBuilder.Entity<Content>().HasRequired(c => c.Writer).WithMany(w => w.Contents).HasForeignKey(c => c.WriterID);
